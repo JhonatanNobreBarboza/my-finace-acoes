@@ -17,3 +17,23 @@ Este é um aplicativo web para gerenciamento de ações da B3 (Bolsa de Valores 
 - **Padrão de Projeto**: MVC
 
 ## Estrutura do Projeto
+
+gerenciador-acoes/
+├── client/
+│   ├── index.html         # Tela de login e interface principal
+│   ├── styles.css         # Estilos da interface
+│   ├── controllers/
+│   │   └── appController.js  # Lógica do frontend
+│   └── models/
+│       └── apiModel.js       # Chamadas à API
+├── server/
+│   ├── server.js          # Inicialização do servidor
+│   ├── routes/
+│   │   └── acoesRoutes.js # Rotas do backend
+│   ├── controllers/
+│   │   └── acoesController.js # Lógica do backend
+│   ├── models/
+│   │   └── acoesModel.js     # Interação com MySQL e API
+│   └── package.json       # Dependências
+└── db.sql                 # Script MySQL para criar o banco
+└── README.md              # Este arquivo
