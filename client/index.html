@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Ações B3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Login</h1>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button id="loginBtn">Entrar</button>
+        </div>
+    </div>
+
+    <div class="container" id="mainContainer" style="display: none;">
+        <h1>Gerenciador de Ações B3</h1>
+        <div class="input-group">
+            <input type="text" id="tickerInput" placeholder="Ticker (ex.: ITUB4.SA)">
+            <input type="number" id="quantidadeInput" placeholder="Quantidade" step="1">
+            <input type="number" id="proventosInput" placeholder="Proventos (R$)" step="0.01">
+            <button id="addBtn">Adicionar</button>
+            <button id="updateBtn">Atualizar Preços</button>
+            <button id="logoutBtn" style="background-color: #ff4444;">Sair</button>
+        </div>
+        <table id="tabelaAcoes">
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Quantidade</th>
+                    <th>Preço Atual (R$)</th>
+                    <th>DY (%)</th>
+                    <th>Preço Justo (R$)</th>
+                    <th>Caro/Barato</th>
+                    <th>Proventos (R$)</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+        <div id="chart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="models/apiModel.js"></script>
+    <script src="controllers/appController.js"></script>
+</body>
+</html>
