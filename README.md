@@ -18,7 +18,7 @@ Este é um aplicativo web para gerenciamento de ações da B3 (Bolsa de Valores 
 
 ## Estrutura do Projeto
 
-gerenciador-acoes/
+```gerenciador-acoes/
 ├── client/
 │   ├── index.html         # Tela de login e interface principal
 │   ├── styles.css         # Estilos da interface
